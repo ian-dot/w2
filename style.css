@@ -1,0 +1,126 @@
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+  main{
+    background: radial-gradient(ellipse at center, #CEC63C 0%, #0D91A4 50%, #C59237 100%);
+  }
+  
+  header {
+    padding: 80px;
+    text-align: center;
+    background-image:
+        url(https://media.giphy.com/media/dwmNhd5H7YAz6/giphy.gif);
+    background-size: 20%;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  header:hover{
+    box-shadow: inset 0px 0px 8px rgb(102, 171, 236), 0 0 15px rgba(102, 171, 236);
+  }
+
+  header h1:hover{
+    box-shadow: inset 0px 0px 8px rgb(102, 171, 236), 0 0 15px rgba(102, 171, 236);
+    border: solid 1px yellow;
+    color: beige;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: flex;    
+    justify-content: flex-start;
+    background-color: #cecece;    
+    
+  }
+
+  nav:hover{
+    background-color: #05408f;    
+  }
+  
+  nav a {
+    color: #5ea1e4;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  nav a:hover{
+    box-shadow: inset 0px 0px 8px rgb(102, 171, 236), 0 0 15px rgba(102, 171, 236);
+    border: solid 1px yellow;
+    color: beige;
+  }
+  
+  .picTitle {
+    padding: 10px;    
+    text-align: center;
+    background-image:none;
+    background-color: aqua;
+    background-size: 30%;
+    color: rgb(42, 42, 42);
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .picTitle:hover{
+    box-shadow: inset 0px 0px 8px rgb(102, 171, 236), 0 0 15px rgba(102, 171, 236);
+  }
+
+  main img{
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  main img:hover{
+    box-shadow: inset 0px 0px 8px rgb(102, 171, 236), 0 0 15px rgba(102, 171, 236);
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+  .topic {
+    display: flex;    
+    align-items: flex-start;
+    width: 90%;
+    margin: 1% auto;
+  }
+  
+   .topic-details {
+    margin-left: 3%;
+    flex: 0 0 60%;
+    color: whitesmoke;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav,
+    .topic {
+      flex-direction: column;
+    }
+  
+    .topic-slideshow button {
+      
+      display: none;
+    }
+  
+    .topic-details {
+      margin-left: 0;
+    }
+  }
+  
